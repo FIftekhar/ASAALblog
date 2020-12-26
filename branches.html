@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASAAL - Chapters</title>
+<style>
+.scroll-left {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: yellow;
+ color: black;
+ border: 1px solid orange;
+}
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-left 15s linear infinite;
+ -webkit-animation: scroll-left 15s linear infinite;
+ animation: scroll-left 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: lightblue;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: lightgreen;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: lightblue;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.twitter-timeline {
+  max-height: 100%;
+}
+</style>
+</head>
+<body>
+<img src="https://i.imgur.com/g5kLVif.png" alt "Banner" width="100%" height="auto">
+<div class="header">
+<p style="font-size: 75px">Alliance of South Asian American Labor</p>
+  <p style="font-size: 30px">Empowerment Through Education, Activism, and Participation</p>
+</div>
+
+<div class="scroll-left">
+<p>Write something here.</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="staff.html">Staff</a>
+  <a href="branches.html">Chapters</a>
+  <a href="registration.html">Registration</a>
+  <a href="currentevents.html">Current Events</a>
+  <!--<a href="slideshow.html">Media</a>-->
+  <!--<a href="history.html">History</a>-->
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Staten Island Chapter</h2>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://i.imgur.com/fmnojLX.jpg" alt "local public leaders" width="100%">
+      </div>
+      <h5 style="text-align: center";>Staten Island chapter leaders and members meeting at the Al-Humza restaurant.</h5>
+      <p>One of ASAAL's seven national branches is on the borough of Staten Island in New York. Many people believe call Staten Island the "Forgotten Borough" because they think it is so disconnected from the rest of the city that nobody pays attention to it. However, ASAAL knows that this branch is made up of many different people of different backgrounds. It also includes political figures such as congressmen/women and the borough president. Together all of these people work to not only make living on Staten Island better and more equal but also lend a helping to the other borough chapters in NYC. <i>One of the Staten Island chapter's latest accomplishments was providing support for Max Rose, who won the election and became a U.S. Congressman.</i></p>
+    </div>
+    
+    <div class="card">
+      <h2>Manhattan Chapter</h2>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://static1.squarespace.com/static/562bcaf7e4b0057d8f98525f/563d1fdfe4b085b67db655b8/563d200ee4b069d7f221ee5c/1446846508438/ASAAL+honored+DSC_0280.JPG?format=750w" alt "ASAAL Education" width="100%">
+      </div>
+      <h5 style="text-align: center";>The Manhattan branch holds an awards ceremony for outstanding leadership and participation.</h5>
+      <p>The Manhattan chapter is typically considered the central divison of our group. Located in the world's financial captial, the Manhattan chapter staff is very familiar with the many types of jobs that people work when they first come to America. There are so many different neighborhoods all over the borough that each provide their own set of circumstances and issues that need to be resolved. ASAAL Manhattan is working very hard to learn about them all and help their fellow citizens reach their solutions. <i>ASAAL's president works in Manhattan at the DC37 building and often provides us with the building to use for annual conventions.</i></p>
+    </div>
+
+    <div class="card">
+      <h2>Brooklyn Chapter</h2>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://i.imgur.com/zbsYZLT.jpg" alt "ASAAL Activism" width="100%">
+      </div>
+      <h5 style="text-align: center";>Brooklyn chapter members and leaders meet with local activists.</h5>
+      <p>ASAAL would not be able to do much if it was not contantly fighting for its people. We take pride in standing up for ourselves and others in times of need. The South Asian and labor communities in general need a voice when they are subjected to injustice. We also make sure we help out with civil issues in other areas as well, such as immigration reform and police violence cases. It is our duty to help bring an end to these issues, and we are very proud of it. Take a stand for universal justice!</p>
+    </div>
+
+    <div class="card">
+      <h2>Bronx Chapter</h2>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://usanewsonline.com/wp-content/uploads/2017/06/asaal_1.jpg" alt "ASAAL Activism" width="100%">
+      </div>
+      <h5 style="text-align: center";>The Bronx chapter meets up and discusses future plans over dinner.</h5>
+      <p>ASAAL would not be able to do much if it was not contantly fighting for its people. We take pride in standing up for ourselves and others in times of need. The South Asian and labor communities in general need a voice when they are subjected to injustice. We also make sure we help out with civil issues in other areas as well, such as immigration reform and police violence cases. It is our duty to help bring an end to these issues, and we are very proud of it. Take a stand for universal justice!</p>
+    </div>
+
+     <div class="card">
+      <h2>Queens Chapter</h2>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://usanewsonline.com/wp-content/uploads/2017/05/Queens-Chapter-Members1.jpg" alt "ASAAL Activism" width="100%">
+      </div>
+      <h5 style="text-align: center";>Women's Committee leaders call a meeting to discuss objectives and current progress in Queens.</h5>
+      <p>Queens has proven to be a very diverse place. Many religious and ethnic groups reside all over the large borough. It has acted the starting place of many immigrant families and continues to do so today. ASAAL takes pride in helping represent and unite the large and growing South Asian communities all over Queens, and showing new immigrants the ropes of American society. <i>The Queens chapter may hold the most ASAAL members of any of the chapters.</i></p>
+    </div>
+
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <img src="https://i.imgur.com/eFcK6nW.jpg" alt "Logo" width="100%";>
+    </div>
+    <div class="card">
+      <h3>Latest Posts</h3>
+      <a class="twitter-timeline" href="https://twitter.com/ASAAL08?ref_src=twsrc%5Etfw" data-h>Tweets by ASAAL08</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div class="card">
+      <h3>Follow Us</h3>
+      <p>Join us on our journey in real time. You can find us across multiple social media platforms.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

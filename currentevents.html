@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASAAL - Current Events</title>
+<style>
+.scroll-left {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: yellow;
+ color: black;
+ border: 1px solid orange;
+}
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-left 15s linear infinite;
+ -webkit-animation: scroll-left 15s linear infinite;
+ animation: scroll-left 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: lightblue;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: lightgreen;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: lightblue;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.twitter-timeline {
+  max-height: 100%;
+}
+</style>
+</head>
+<body>
+<img src="https://i.imgur.com/g5kLVif.png" alt "Banner" width="100%" height="auto">
+<div class="header">
+<p style="font-size: 75px">Alliance of South Asian American Labor</p>
+  <p style="font-size: 30px">Empowerment Through Education, Activism, and Participation</p>
+</div>
+
+<div class="scroll-left">
+<p>Write something here.</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="staff.html">Staff</a>
+  <a href="branches.html">Chapters</a>
+  <a href="registration.html">Registration</a>
+  <a href="currentevents.html">Current Events</a>
+  <!--<a href="history.html">History</a>-->
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <h2>Current Events</h2>
+    <p>Here's whats new!</p>
+    <div class="card">
+      <h2>Event 1</h2>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://i.imgur.com/lSCPAoo.jpg" alt "local public leaders" width="100%">
+      </div>
+      <p>Information</p>
+    </div>
+
+<div class="card">
+      <h2>Event 2</h2>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://i.imgur.com/lSCPAoo.jpg" alt "local public leaders" width="100%">
+      </div>
+      <p>Information</p>
+    </div>
+
+    <div class="card">
+      <h2>Event 3</h2>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://i.imgur.com/lSCPAoo.jpg" alt "local public leaders" width="100%">
+      </div>
+      <p>Information</p>
+    </div>
+
+    <div class="card">
+      <h2>Event 4</h2>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://i.imgur.com/lSCPAoo.jpg" alt "local public leaders" width="100%">
+      </div>
+      <p>Information</p>
+    </div>
+
+    <div class="card">
+      <h2>Event 5</h2>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://i.imgur.com/lSCPAoo.jpg" alt "local public leaders" width="100%">
+      </div>
+      <p>Information</p>
+    </div>
+
+    <div class="card">
+      <h2>Event 6</h2>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://i.imgur.com/lSCPAoo.jpg" alt "local public leaders" width="100%">
+      </div>
+      <p>Information</p>
+    </div>
+
+    <div class="card">
+      <h2>Event 7</h2>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://i.imgur.com/lSCPAoo.jpg" alt "local public leaders" width="100%">
+      </div>
+      <p>Information</p>
+    </div>
+
+    <div class="card">
+      <h2>Event 8</h2>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://i.imgur.com/lSCPAoo.jpg" alt "local public leaders" width="100%">
+      </div>
+      <p>Information</p>
+    </div>
+
+
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <img src="https://i.imgur.com/eFcK6nW.jpg" alt "Logo" width="100%";>
+    </div>
+    <div class="card">
+      <h3>Latest Posts</h3>
+      <a class="twitter-timeline" href="https://twitter.com/ASAAL08?ref_src=twsrc%5Etfw" data-h>Tweets by ASAAL08</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div class="card">
+      <h3>Follow Us</h3>
+      <p>Join us on our journey in real time. You can find us across multiple social media platforms.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

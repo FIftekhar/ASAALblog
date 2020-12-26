@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASAAL - Staff</title>
+<style>
+.scroll-left {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: yellow;
+ color: black;
+ border: 1px solid orange;
+}
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-left 15s linear infinite;
+ -webkit-animation: scroll-left 15s linear infinite;
+ animation: scroll-left 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: lightblue;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: lightgreen;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.headline {
+  padding: 10px;
+  background-color: lightgreen;
+  margin-top: 20px;
+  text-align: center;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: lightblue;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 45%;
+  padding: 20px;
+  display: inline-block;
+}
+
+.fakeimg2 {
+  background-color: #aaa;
+  width: 45%;
+  padding: 20px;
+  display: inline-block;
+  transform: translate(0%, 5%);
+  -ms-transform: translate(33%, 50%);
+}
+
+.description {
+  display: inline-block;
+  background-color: lightgreen;
+  padding: 20px;
+  width: 33%;
+  margin-bottom: 10px;
+  transform: translate(33%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.description2 {
+  display: inline-block;
+  background-color: lightgreen;
+  padding: 20px;
+  width: 33%;
+  margin-bottom: 10px;
+  transform: translate(33%, -25%);
+  -ms-transform: translate(-50%, 50%);
+}
+
+.description3 {
+  display: inline-block;
+  background-color: lightgreen;
+  padding: 20px;
+  width: 33%;
+  margin-bottom: 10px;
+  transform: translate(33%, -100%);
+  -ms-transform: translate(-50%, 50%);
+}
+
+.description4 {
+  display: inline-block;
+  background-color: lightgreen;
+  padding: 20px;
+  width: 33%;
+  margin-bottom: 10px;
+  transform: translate(33%, -75%);
+  -ms-transform: translate(-50%, 50%);
+}
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.twitter-timeline {
+  max-height: 100%;
+}
+</style>
+</head>
+<body>
+<img src="https://i.imgur.com/g5kLVif.png" alt "Banner" width="100%" height="auto">
+<div class="header">
+<p style="font-size: 75px">Alliance of South Asian American Labor</p>
+  <p style="font-size: 30px">Empowerment Through Education, Activism, and Participation</p>
+</div>
+
+<div class="scroll-left">
+<p>Write something here.</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="staff.html">Staff</a>
+  <a href="branches.html">Chapters</a>
+  <a href="registration.html">Registration</a>
+  <a href="currentevents.html">Current Events</a>
+  <!--<a href="slideshow.html">Media</a>-->
+  <!--<a href="history.html">History</a>-->
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="headline">
+      <h2>ASAAL's Executive Council</h2>
+    </div>
+    <div class="card">
+      <h2>Maf Uddin</h2>
+      <h3>President and Founder</h3>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://i.imgur.com/cIPix8k.jpg" alt "Maf Uddin" width="100%">
+      </div>
+      <div class="description">
+        <p>Mr. Maf Uddin is a current Director at District Council 37. Local 1407 President Maf Misbath Uddin is the first Bangladeshi immigrant to head a U.S. municipal union local. As a student, he was active in the independence movement in Bangladesh. He joined the city work force in 1988 as an Actuary for the retirement systems. Co-Chair of the DC 37 Asian Heritage Committee, Mr. Uddin holds master's degrees in mathematics, demography and actuarial science. <br>
+
+        Mr. Uddin sits on the Screening Committee. He served as a Local 1407 Executive Board member and delegate before he was elected president in 2000. He will draw from his experience as president of Parkchester South Condominium - with a $45 million budget - to carry out his responsibilities as the new chair of the DC 37 Finance Committee.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Mohammed Chowdhury</h2>
+      <h3>Secretary</h3>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://i.imgur.com/xHXOD8B.jpg" alt "MKC" width="100%">
+      </div>
+      <div class="description3">
+        <p>Mohammed Karim Chowdhury has been an incredibly active member of ASAAL. He attends many of the events organized by ASAAL and other groups and is well known for helping people solve their problems. His popularity was earned through hard work. Through his efforts, he has proven to be an excellent executive member.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Jed Matalon</h2>
+      <h3>Corresponding Secretary</h3>
+      <div class="fakeimg2" style="height:100%;">
+          <img src="https://i.imgur.com/0Yhy7F2.jpg" alt "Jed" width="100%">
+      </div>
+      <div class="description2">
+        <p>You don't have to be South Asian to be a part of ASAAL! Jed has been with Maf and the ASAAL team from the very beginning. He has proven his loyalty and resourcefulness over the years and is a key part of ASAAL. His excellent organizational skills make him a key factor in our progress.</p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <h2>Ahmed Sakir, P.E.</h2>
+      <h3>Treasurer</h3>
+      <div class="fakeimg2" style="height:100%;">
+          <img src="https://i.imgur.com/0Yhy7F2.jpg" alt "Jed" width="100%">
+      </div>
+      <div class="description2">
+        <p>Write something here.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Bhairavi Desai</h2>
+      <h3>1st Executive Vice President</h3>
+      <div class="fakeimg2" style="height:100%;">
+          <img src="https://i.imgur.com/aRkryvE.jpg" alt "Bhairavi Desai" width="100%">
+      </div>
+      <div class="description4">
+        <p>Bhairavi Desai moved to the U.S. from India at the age of six. She lived in New Jersey, and after getting a Women's Studies degree from Rutger's University, worked with the Manavi organization to help victims of domestic violence. Later, she started working for the Committee of Asian American Workers in 1996. She was a key player in the taxi driver strike of 1998, and the movement to initiate new TLC regulations of 2011. Her work has gained her a lot of respect among taxi drivers.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Syed Rahim</h2>
+      <h3>Executive Director</h3>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://i.imgur.com/cIPix8k.jpg" alt "Maf Uddin" width="100%">
+      </div>
+      <div class="description">
+        <p>Write something here.</p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <h2>Omar Faroque Khasru</h2>
+      <h3>Organizing Director</h3>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://i.imgur.com/cIPix8k.jpg" alt "Maf Uddin" width="100%">
+      </div>
+      <div class="description">
+        <p>Write something here.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Sahana Begum</h2>
+      <h3>Women's Committee Chair</h3>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://i.imgur.com/cIPix8k.jpg" alt "Maf Uddin" width="100%">
+      </div>
+      <div class="description">
+        <p>Write something here.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Krish Rudra, MBA</h2>
+      <h3>Immigration Director</h3>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://i.imgur.com/cIPix8k.jpg" alt "Maf Uddin" width="100%">
+      </div>
+      <div class="description">
+        <p>Write something here.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Ali Najmi, Esq.</h2>
+      <h3>Political Director</h3>
+      <div class="fakeimg" style="height:100%;">
+          <img src="https://i.imgur.com/cIPix8k.jpg" alt "Maf Uddin" width="100%">
+      </div>
+      <div class="description">
+        <p>Write something here.</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <img src="https://i.imgur.com/eFcK6nW.jpg" alt "Logo" width="100%";>
+    </div>
+    <div class="card">
+      <h3>Latest Posts</h3>
+      <a class="twitter-timeline" href="https://twitter.com/ASAAL08?ref_src=twsrc%5Etfw" data-h>Tweets by ASAAL08</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div class="card">
+      <h3>Follow Us</h3>
+      <p>Join us on our journey in real time. You can find us across multiple social media platforms.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
