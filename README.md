@@ -1,3 +1,3 @@
-Testing SSH with GitHub
+Testing SSH and GPG keys with GitHub
 
-this is an edit I made with the editREADME branch
+These are some changes that I am making to the README file for Web Dev setup
